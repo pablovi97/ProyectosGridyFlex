@@ -1,0 +1,86 @@
+body {
+    box-sizing: border-box;
+    margin:0;
+    background: #ff9966;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.contenedor {
+    background-color: white;
+    height: calc( 100vh - 20px );
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 30px 0 30px;
+}
+h1, h2 {
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+}
+h2 {
+    color:white;
+}
+
+.contenedor-flex {
+    display: flex;
+    border: 3px solid black;
+    /**Direcciones*/
+    flex-direction: row;
+    /**WRAP*/
+    flex-wrap:wrap; 
+    /*Flex flow -colum o row  y el tipo de wrap*/
+    flex-flow: row wrap;/*lo mismo que lo de arriba pero en una linea*/
+
+
+/*ALINEAR ELEMENTOS*/
+/*justify-content: flex-end; /*alinea los elementos al final*/
+/*justify-content: flex-start;/*alinea los elementos al principio , y space around  separandolo por espacios*/
+/*justify-content: center; alinea al centro*/
+/*justify-content: space-around; alinea  separandolo por espacios*/
+/*justify-content: space-between;alinea como el around pero poniendo los espacios solo a la derecha*/
+
+
+
+/*ALINEAR ELEMENTOS VERTICALES*/
+
+/*
+height :400px ;
+align-items: flex-start; alinea arriba
+align-items:  flex-end; alinea abajo
+
+align-items:  baseline; se coloca en la base que es arriba;
+
+align-items:  center; lo coloca en el centro;
+
+
+*/
+
+
+
+
+  
+}
+
+.elemento-flex {
+    padding: 10px;
+   
+   /** flex-grow: 1;/*para crecer*/
+   /* Flex : toma  3 parametros: 1) flex-grow 2) flex-shrink 3) flex-basis*/
+/*flex: 1 0  auto;*/   
+
+}
+.elemento-flex:nth-child(1) {
+    background-color: #E53935;
+ 
+}
+.elemento-flex:nth-child(2) {
+    background-color: #8E24AA;
+   /** flex-grow: 0;/*para crecer*/
+    /**flex-shrink: 0;/*para elimina el grow per para ello hay que poner el grow en 0*/
+}
+
+.elemento-flex:nth-child(3) {
+    background-color: #3F51B5;
+    /*align-self: strech; cuando quieres alinear elementos a parte*/
+}
